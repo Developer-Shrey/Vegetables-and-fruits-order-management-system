@@ -1,0 +1,81 @@
+*{
+    font-family: 'Muli', sans-serif;
+}
+
+
+.container-fluid{
+    background: linear-gradient(to right, #fc5c7d, #6a82fb);
+    height: 1050px;
+}
+
+
+.col-lg-5{
+        // used to adjust width of the card
+
+    width: 450px;
+    padding-top: 160px;
+}
+
+.card {
+
+    // used to adjust height of the card
+    height: 450px;
+    box-shadow: 0 18px 19px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+      
+}
+
+.L{
+        font-weight: 750;
+        font-size:350%;
+        padding-top: 2px;
+        color:black;
+        background-color: #E9EDC9;
+        text-align:center ;
+        outline:yellow solid 2px;
+
+}
+
+  .form-control:focus {
+  
+      color: #000;
+      background-color: #fff;
+      border:2px solid #E8D426;
+      outline: 0;
+      box-shadow: none;
+  
+  }
+  
+  .btn{
+    background: #E8D426;
+    background-color: #4CAF50; /* Green, yellow(E8D426) */
+    border: #E8D426;
+    padding: 10px 5px; 
+    // (height,width)
+    transition-duration: 0.4s;
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: 500px;
+    opacity: 1.2; 
+    text-align: center;
+    }
+  
+  .btn:hover {
+    background: #E8D426;
+    border: #E8D426;
+
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+
+  input#name{
+    // width: 400px;
+    height: 55px;
+  }
+
+  input,
+  input::-webkit-input-placeholder {
+      font-size: 20px;
+    //   line-height: 4;
+  }
+  

@@ -1,0 +1,82 @@
+<app-navbar></app-navbar>
+
+
+<h1 class="text-center U mt-5">Fruits</h1>
+
+
+  
+                                     <!-- card-1 -->
+
+<div class="container mt-5">
+
+    <div class="row">
+        <div class="col-lg-3 my-3" *ngFor="let item of FruitList ; let i=index">
+            <div class="card a" style="width: 30rem;height: 45rem;">
+                <img [src]="item.image" class="card-img-top" height="280px" alt="..." >
+                <div class="card-body ">
+                  <h5 class="card-title d" style="font-weight: 550;">{{item.Id}} </h5>
+                  <h5 class="card-title mt-2" style="font-weight: 550;text-align: center;font-size: 36px;">{{item.Name}} </h5>
+
+                  <button type="button" class="btn" (click)="FruitsList(i)">Checkout</button>
+
+
+                </div>
+              </div>
+              
+        </div>
+      </div>
+
+  
+
+</div>
+
+  
+<!-- <div class="container-fluid mt-4" style="padding-left: 110px;">
+
+  <input type="email" class="form-control" id="name" placeholder="Search Fruit item here" name="email" [(ngModel)]="searchtext">
+<br>
+
+<table class="table table-bordered">
+
+
+  <thead>
+    <tr>
+      <th style="font-size: 24px;text-align: center;font-weight: 500;">You selected item no.</th>
+      <th style="font-size: 24px;text-align: center;font-weight: 500;">Name</th>
+      <th style="font-size: 24px;text-align: center;font-weight: 500;">Price</th>
+      <th style="font-size: 24px;text-align: center;font-weight: 500;">Count</th>
+      <th style="font-size: 24px;text-align: center;font-weight: 500;">Image</th>
+    </tr>
+  </thead>
+
+
+  <tbody *ngFor="let item of Data  | filter:searchtext ;let i=index">
+
+    <tr >
+      <td style="font-size: 16px;text-align: center;font-weight: 500;" >{{item.Id}}</td>
+      <td style="font-size: 16px;text-align: center;font-weight: 500;" >{{item.Name}}</td>
+      <td style="font-size: 16px;text-align: center;font-weight: 500;" >{{item.Price}}</td>
+      <td style="font-size: 16px;text-align: center;font-weight: 500;" >{{item.Count}}</td>
+      <td style="font-size: 16px;text-align: center;font-weight: 500;" >{{item.image}} <button class="btn D" (click)="Delete1(i)">Delete</button> </td>
+    </tr>
+  </tbody>
+</table>
+
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <app-footer ></app-footer> 
+

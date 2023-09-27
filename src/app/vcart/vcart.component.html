@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+
+
+<div class="container-fluid mt-4" style="padding-left: 110px;">
+
+    <input type="email" class="form-control" id="name" placeholder="Search Vegetable here" name="email" [(ngModel)]="searchtext1">
+  <br>
+  
+  <table class="table table-bordered">
+  
+  
+    <thead>
+      <tr>
+        <th style="font-size: 24px;text-align: center;font-weight: 500;">You selected item no.</th>
+        <th style="font-size: 24px;text-align: center;font-weight: 500;">Name</th>
+        <th style="font-size: 24px;text-align: center;font-weight: 500;">Price</th>
+        <th style="font-size: 24px;text-align: center;font-weight: 500;">Count</th>
+        <th style="font-size: 24px;text-align: center;font-weight: 500;">Image</th>
+      </tr>
+    </thead>
+  
+  
+    <tbody *ngFor="let item of Data1  | filter:searchtext1 ;let i=index">
+  
+      <tr >
+        <td style="font-size: 16px;text-align: center;font-weight: 500;" >{{item.Id}}</td>
+        <td style="font-size: 16px;text-align: center;font-weight: 500;" >{{item.Name}}</td>
+        <td style="font-size: 16px;text-align: center;font-weight: 500;" >{{item.Price}}</td>
+        <td style="font-size: 16px;text-align: center;font-weight: 500;" >{{item.Count}}</td>
+        <td style="font-size: 16px;text-align: center;font-weight: 500;" >{{item.image}} <button class="btn D" (click)="Delete1(i)">Delete</button> </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  </div>
+  
